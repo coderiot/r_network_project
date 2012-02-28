@@ -1,5 +1,5 @@
-create_category_graph  <- function(ctgry) {
-	pages  <- get_pages(ctgry)
+create_category_graph  <- function(ctgry, n) {
+	pages  <- get_pages(ctgry, n)
 
 	cats_page_list  <- list()
 
@@ -14,18 +14,16 @@ create_category_graph  <- function(ctgry) {
 			next
 		}
 
-		#print(length(cats))
 		edge_combs <- combn(unlist(cats), 2)
 		edge_df  <- data.frame(matrix(t(edge_combs), ncol=2))
 		graph_df  <- merge(graph_df, edge_df, all=T)
 	}
 
-	return(graph_df)
-	#return(cats_page_list)
+	return(graph.data.frame(graph_df, directed=F))
 }
 
-get_pages <- function(ctgry) {
-	cat_url <- paste("http://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmlimit=100&cmtype=page&format=json&cmtitle=Category:", ctgry, sep="")
+get_pages <- function(ctgry, n) {
+	cat_url <- paste("http://en.wikipedia.org/w/api.php?action=query&list=categorymembers&cmlimit=", n,"&cmtype=page&format=json&cmtitle=Category:", ctgry, sep="")
 	pages <- fromJSON(cat_url)$query$categorymembers
 
 	page_list <- list()
