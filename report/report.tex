@@ -1,0 +1,70 @@
+% THIS IS SIGPROC-SP.TEX - VERSION 3.1
+% WORKS WITH V3.2SP OF ACM_PROC_ARTICLE-SP.CLS
+% APRIL 2009
+%
+% It is an example file showing how to use the 'acm_proc_article-sp.cls' V3.2SP
+% LaTeX2e document class file for Conference Proceedings submissions.
+% ----------------------------------------------------------------------------------------------------------------
+% This .tex file (and associated .cls V3.2SP) *DOES NOT* produce:
+%       1) The Permission Statement
+%       2) The Conference (location) Info information
+%       3) The Copyright Line with ACM data
+%       4) Page numbering
+% ---------------------------------------------------------------------------------------------------------------
+% It is an example which *does* use the .bib file (from which the .bbl file
+% is produced).
+% REMEMBER HOWEVER: After having produced the .bbl file,
+% and prior to final submission,
+% you need to 'insert'  your .bbl file into your source .tex file so as to provide
+% ONE 'self-contained' source file.
+%
+% Questions regarding SIGS should be sent to
+% Adrienne Griscti ---> griscti@acm.org
+%
+% Questions/suggestions regarding the guidelines, .tex and .cls files, etc. to
+% Gerald Murray ---> murray@hq.acm.org
+%
+% For tracking purposes - this is V3.1SP - APRIL 2009
+
+\documentclass{acm_proc_article-sp}
+
+\usepackage[ngerman]{babel}
+\usepackage[utf8]{inputenc}
+
+\begin{document}
+
+%\title{Complex Network Analysis mit R}
+%\subtitle{Kategorien bei Artikeln eines wissenschaftlichen Fachsgebiets in der Wikipedia}
+\title{Kategorien bei Artikeln eines wissenschaftlichen Fachsgebiets in der Wikipedia}
+
+\numberofauthors{1} 
+\author{
+% 1st. author
+\alignauthor
+	First Author\\
+	\affaddr{Universität}\\
+	\email{peterr@github.com}
+}
+
+\maketitle
+\begin{abstract}
+	Das ist mein Abstract.
+\end{abstract}
+
+\section{Einführung}
+\section{Datensatz}
+Der Datensatz für die Analyse der Kategorien von wissenschaftlichen Fachgebieten wurde über die API der englischen Wikipedia gewonnen. Es wurde die Kategorie \ldots als beispielhaftes Themengebiet ausgewählt, um die Analyse durchzuführen. Bei unserer Analyse wurde nur die Artikel berücksichtigt, die direkt unter der Kategorie als Seiten aufgelistet werden.
+\subsection{Aufbau des Netzwerks}
+Die Kategorien der Artikel bilden in unserem Netzwerk bilden die Knoten und haben außer dem Namen der Kategorie keine weiteren Eigenschaften. Die Kanten zwischen den Kategorien beschreiben die Bezeihung, dass beide Kategorien zusammen einem Artikel zugeordnet wurden. Die Kanten sind ungerichtet, da beide Kategorien in einem Artikel immer zusammen verwendet werden. Zwischen zweiKnoten können keine, eine oder mehr Kanten existieren. Mehr als eine Kanten zwischen zwei Knoten, existieren nur, wenn die beiden Kategorien in mehreren Artikel zusammen verwendet werden.
+\section{Network characteristics}
+\section{Analyse}
+\section{Ergebnisse}
+\section{Zusammenfassung}
+\cite{*}
+%\section{Section 7}
+%\section{Section 8}
+%\section{Section 9}
+%\section{Section 10}
+\bibliographystyle{abbrv}
+\bibliography{report}
+\end{document}  % This is where a 'short' article might terminate
