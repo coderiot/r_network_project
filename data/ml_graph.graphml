@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns
+         http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+<!-- Created by igraph -->
+  <key id="name" for="node" attr.name="name" attr.type="string"/>
+  <graph id="G" edgedefault="undirected">
+    <node id="n0">
+      <data key="name">Cybernetics</data>
+    </node>
+    <node id="n1">
+      <data key="name">Learning</data>
+    </node>
+    <node id="n2">
+      <data key="name">Learning in computer vision</data>
+    </node>
+    <node id="n3">
+      <data key="name">Data mining</data>
+    </node>
+    <node id="n4">
+      <data key="name">Data analysis</data>
+    </node>
+    <node id="n5">
+      <data key="name">Statistical algorithms</data>
+    </node>
+    <node id="n6">
+      <data key="name">Bayesian statistics</data>
+    </node>
+    <node id="n7">
+      <data key="name">Epidemiology</data>
+    </node>
+    <node id="n8">
+      <data key="name">Psychometrics</data>
+    </node>
+    <node id="n9">
+      <data key="name">Cognitive psychology</data>
+    </node>
+    <node id="n10">
+      <data key="name">Cognitive science</data>
+    </node>
+    <node id="n11">
+      <data key="name">Cognitive neuroscience</data>
+    </node>
+    <node id="n12">
+      <data key="name">Massachusetts Institute of Technology</data>
+    </node>
+    <node id="n13">
+      <data key="name">Neuroscience research centers</data>
+    </node>
+    <node id="n14">
+      <data key="name">Vision</data>
+    </node>
+    <node id="n15">
+      <data key="name">Cluster analysis</data>
+    </node>
+    <node id="n16">
+      <data key="name">Geostatistics</data>
+    </node>
+    <node id="n17">
+      <data key="name">Computational learning theory</data>
+    </node>
+    <node id="n18">
+      <data key="name">Learning theory (education)</data>
+    </node>
+    <node id="n19">
+      <data key="name">Graphical models</data>
+    </node>
+    <node id="n20">
+      <data key="name">Artificial intelligence conferences</data>
+    </node>
+    <node id="n21">
+      <data key="name">Computational neuroscience</data>
+    </node>
+    <node id="n22">
+      <data key="name">International conferences in Canada</data>
+    </node>
+    <node id="n23">
+      <data key="name">Neural networks</data>
+    </node>
+    <node id="n24">
+      <data key="name">Heuristics</data>
+    </node>
+    <node id="n25">
+      <data key="name">Monte Carlo methods</data>
+    </node>
+    <node id="n26">
+      <data key="name">Model selection</data>
+    </node>
+    <node id="n27">
+      <data key="name">Dynamic programming</data>
+    </node>
+    <node id="n28">
+      <data key="name">Applications of computer vision</data>
+    </node>
+    <node id="n29">
+      <data key="name">Artificial intelligence</data>
+    </node>
+    <node id="n30">
+      <data key="name">Artificial intelligence stubs</data>
+    </node>
+    <node id="n31">
+      <data key="name">Computer science stubs</data>
+    </node>
+    <node id="n32">
+      <data key="name">Decision trees</data>
+    </node>
+    <node id="n33">
+      <data key="name">Classification algorithms</data>
+    </node>
+    <node id="n34">
+      <data key="name">Dimension reduction</data>
+    </node>
+    <node id="n35">
+      <data key="name">Statistical models</data>
+    </node>
+    <node id="n36">
+      <data key="name">Information science</data>
+    </node>
+    <node id="n37">
+      <data key="name">Knowledge representation</data>
+    </node>
+    <node id="n38">
+      <data key="name">Applied mathematics stubs</data>
+    </node>
+    <node id="n39">
+      <data key="name">Lattice theory</data>
+    </node>
+    <node id="n40">
+      <data key="name">Probabilistic models</data>
+    </node>
+    <node id="n41">
+      <data key="name">Computer vision research infrastructure</data>
+    </node>
+    <node id="n42">
+      <data key="name">Image processing</data>
+    </node>
+    <node id="n43">
+      <data key="name">International non-profit organizations</data>
+    </node>
+    <node id="n44">
+      <data key="name">Bias</data>
+    </node>
+    <node id="n45">
+      <data key="name">Computer science journals</data>
+    </node>
+    <node id="n46">
+      <data key="name">Open access journals</data>
+    </node>
+    <node id="n47">
+      <data key="name">Publications established in 2000</data>
+    </node>
+    <node id="n48">
+      <data key="name">Control theory</data>
+    </node>
+    <node id="n49">
+      <data key="name">Information retrieval</data>
+    </node>
+    <node id="n50">
+      <data key="name">Cryptography</data>
+    </node>
+    <node id="n51">
+      <data key="name">Delayed open access journals</data>
+    </node>
+    <node id="n52">
+      <data key="name">Publications established in 1986</data>
+    </node>
+    <node id="n53">
+      <data key="name">Scientific journal stubs</data>
+    </node>
+    <node id="n54">
+      <data key="name">Computer programming stubs</data>
+    </node>
+    <node id="n55">
+      <data key="name">Bioinformatics</data>
+    </node>
+    <node id="n56">
+      <data key="name">Cheminformatics</data>
+    </node>
+    <node id="n57">
+      <data key="name">Computational chemistry</data>
+    </node>
+    <node id="n58">
+      <data key="name">Statistical classification</data>
+    </node>
+    <node id="n59">
+      <data key="name">Statistical ratios</data>
+    </node>
+    <node id="n60">
+      <data key="name">Latent variable models</data>
+    </node>
+    <node id="n61">
+      <data key="name">Humanoid robots</data>
+    </node>
+    <node id="n62">
+      <data key="name">Sequential experiments</data>
+    </node>
+    <node id="n63">
+      <data key="name">Sequential methods</data>
+    </node>
+    <node id="n64">
+      <data key="name">Multilinear algebra</data>
+    </node>
+    <node id="n65">
+      <data key="name">Approximation algorithms</data>
+    </node>
+    <node id="n66">
+      <data key="name">Discrete geometry</data>
+    </node>
+    <node id="n67">
+      <data key="name">Geometric algorithms</data>
+    </node>
+    <node id="n68">
+      <data key="name">Mathematical optimization</data>
+    </node>
+    <node id="n69">
+      <data key="name">Computing stubs</data>
+    </node>
+    <node id="n70">
+      <data key="name">Regression analysis</data>
+    </node>
+    <node id="n71">
+      <data key="name">Formal sciences</data>
+    </node>
+    <node id="n72">
+      <data key="name">Dynamical systems</data>
+    </node>
+    <node id="n73">
+      <data key="name">Decision theory</data>
+    </node>
+    <node id="n74">
+      <data key="name">Clustering criteria</data>
+    </node>
+    <node id="n75">
+      <data key="name">Inductive reasoning</data>
+    </node>
+    <node id="n76">
+      <data key="name">Database management systems</data>
+    </node>
+    <node id="n77">
+      <data key="name">Grid computing</data>
+    </node>
+    <node id="n78">
+      <data key="name">Computational statistics</data>
+    </node>
+    <node id="n79">
+      <data key="name">Arguments</data>
+    </node>
+    <node id="n80">
+      <data key="name">Ontology</data>
+    </node>
+    <node id="n81">
+      <data key="name">Combinatorics</data>
+    </node>
+    <node id="n82">
+      <data key="name">Statistical paradoxes</data>
+    </node>
+    <node id="n83">
+      <data key="name">Natural language processing</data>
+    </node>
+    <node id="n84">
+      <data key="name">Multivariate statistics</data>
+    </node>
+    <node id="n85">
+      <data key="name">Numerical analysis</data>
+    </node>
+    <node id="n86">
+      <data key="name">Ontology (information science)</data>
+    </node>
+    <node id="n87">
+      <data key="name">Uncertainty of numbers</data>
+    </node>
+    <node id="n88">
+      <data key="name">Statistical inference</data>
+    </node>
+    <node id="n89">
+      <data key="name">Statistics stubs</data>
+    </node>
+    <node id="n90">
+      <data key="name">Puzzles</data>
+    </node>
+    <node id="n91">
+      <data key="name">Visual perception</data>
+    </node>
+    <node id="n92">
+      <data key="name">Research organizations</data>
+    </node>
+    <node id="n93">
+      <data key="name">Theoretical computer science</data>
+    </node>
+    <node id="n94">
+      <data key="name">Neuroscience conferences</data>
+    </node>
+    <node id="n95">
+      <data key="name">Optimization algorithms and methods</data>
+    </node>
+    <node id="n96">
+      <data key="name">Regression variable selection</data>
+    </node>
+    <node id="n97">
+      <data key="name">Unmanned ground vehicles</data>
+    </node>
+    <node id="n98">
+      <data key="name">Scientific organization stubs</data>
+    </node>
+    <node id="n99">
+      <data key="name">Science stubs</data>
+    </node>
+    <node id="n100">
+      <data key="name">Stubs</data>
+    </node>
+    <node id="n101">
+      <data key="name">Organizations established in 1978</data>
+    </node>
+    <node id="n102">
+      <data key="name">Statistical data sets</data>
+    </node>
+    <node id="n103">
+      <data key="name">Technology stubs</data>
+    </node>
+    <node id="n104">
+      <data key="name">Ranking functions</data>
+    </node>
+    <node id="n105">
+      <data key="name">Springer academic journals</data>
+    </node>
+    <node id="n106">
+      <data key="name">Summary statistics for contingency tables</data>
+    </node>
+    <node id="n107">
+      <data key="name">Robotics stubs</data>
+    </node>
+    <node id="n108">
+      <data key="name">Stochastic optimization</data>
+    </node>
+    <node id="n109">
+      <data key="name">Tensors</data>
+    </node>
+    <node id="n110">
+      <data key="name">Pattern recognition</data>
+    </node>
+    <node id="n111">
+      <data key="name">Robot control</data>
+    </node>
+    <node id="n112">
+      <data key="name">Variable (computer programming)</data>
+    </node>
+    <node id="n113">
+      <data key="name">Mathematics stubs</data>
+    </node>
+    <node id="n114">
+      <data key="name">Programming language topic stubs</data>
+    </node>
+    <node id="n115">
+      <data key="name">Theorems</data>
+    </node>
+    <edge source="n0" target="n1">
+    </edge>
+    <edge source="n0" target="n2">
+    </edge>
+    <edge source="n1" target="n2">
+    </edge>
+    <edge source="n3" target="n82">
+    </edge>
+    <edge source="n3" target="n83">
+    </edge>
+    <edge source="n3" target="n16">
+    </edge>
+    <edge source="n3" target="n84">
+    </edge>
+    <edge source="n3" target="n85">
+    </edge>
+    <edge source="n3" target="n32">
+    </edge>
+    <edge source="n3" target="n36">
+    </edge>
+    <edge source="n3" target="n37">
+    </edge>
+    <edge source="n3" target="n39">
+    </edge>
+    <edge source="n3" target="n86">
+    </edge>
+    <edge source="n3" target="n42">
+    </edge>
+    <edge source="n3" target="n49">
+    </edge>
+    <edge source="n3" target="n66">
+    </edge>
+    <edge source="n3" target="n67">
+    </edge>
+    <edge source="n3" target="n68">
+    </edge>
+    <edge source="n3" target="n87">
+    </edge>
+    <edge source="n4" target="n5">
+    </edge>
+    <edge source="n4" target="n88">
+    </edge>
+    <edge source="n3" target="n4">
+    </edge>
+    <edge source="n4" target="n16">
+    </edge>
+    <edge source="n4" target="n84">
+    </edge>
+    <edge source="n4" target="n114">
+    </edge>
+    <edge source="n5" target="n88">
+    </edge>
+    <edge source="n6" target="n7">
+    </edge>
+    <edge source="n6" target="n8">
+    </edge>
+    <edge source="n6" target="n89">
+    </edge>
+    <edge source="n6" target="n31">
+    </edge>
+    <edge source="n7" target="n8">
+    </edge>
+    <edge source="n7" target="n89">
+    </edge>
+    <edge source="n8" target="n89">
+    </edge>
+    <edge source="n9" target="n10">
+    </edge>
+    <edge source="n9" target="n90">
+    </edge>
+    <edge source="n10" target="n89">
+    </edge>
+    <edge source="n10" target="n90">
+    </edge>
+    <edge source="n10" target="n73">
+    </edge>
+    <edge source="n11" target="n12">
+    </edge>
+    <edge source="n11" target="n13">
+    </edge>
+    <edge source="n11" target="n14">
+    </edge>
+    <edge source="n11" target="n91">
+    </edge>
+    <edge source="n12" target="n13">
+    </edge>
+    <edge source="n12" target="n14">
+    </edge>
+    <edge source="n12" target="n91">
+    </edge>
+    <edge source="n13" target="n14">
+    </edge>
+    <edge source="n13" target="n91">
+    </edge>
+    <edge source="n14" target="n91">
+    </edge>
+    <edge source="n4" target="n15">
+    </edge>
+    <edge source="n3" target="n15">
+    </edge>
+    <edge source="n15" target="n16">
+    </edge>
+    <edge source="n15" target="n84">
+    </edge>
+    <edge source="n15" target="n35">
+    </edge>
+    <edge source="n15" target="n40">
+    </edge>
+    <edge source="n15" target="n60">
+    </edge>
+    <edge source="n16" target="n84">
+    </edge>
+    <edge source="n17" target="n93">
+    </edge>
+    <edge source="n19" target="n93">
+    </edge>
+    <edge source="n3" target="n20">
+    </edge>
+    <edge source="n20" target="n21">
+    </edge>
+    <edge source="n20" target="n22">
+    </edge>
+    <edge source="n20" target="n23">
+    </edge>
+    <edge source="n20" target="n94">
+    </edge>
+    <edge source="n20" target="n30">
+    </edge>
+    <edge source="n21" target="n22">
+    </edge>
+    <edge source="n21" target="n23">
+    </edge>
+    <edge source="n21" target="n94">
+    </edge>
+    <edge source="n22" target="n23">
+    </edge>
+    <edge source="n22" target="n94">
+    </edge>
+    <edge source="n23" target="n94">
+    </edge>
+    <edge source="n24" target="n25">
+    </edge>
+    <edge source="n24" target="n95">
+    </edge>
+    <edge source="n25" target="n95">
+    </edge>
+    <edge source="n26" target="n96">
+    </edge>
+    <edge source="n27" target="n85">
+    </edge>
+    <edge source="n28" target="n97">
+    </edge>
+    <edge source="n29" target="n30">
+    </edge>
+    <edge source="n1" target="n30">
+    </edge>
+    <edge source="n2" target="n30">
+    </edge>
+    <edge source="n4" target="n30">
+    </edge>
+    <edge source="n30" target="n31">
+    </edge>
+    <edge source="n0" target="n30">
+    </edge>
+    <edge source="n30" target="n34">
+    </edge>
+    <edge source="n30" target="n64">
+    </edge>
+    <edge source="n30" target="n109">
+    </edge>
+    <edge source="n30" target="n72">
+    </edge>
+    <edge source="n31" target="n89">
+    </edge>
+    <edge source="n3" target="n31">
+    </edge>
+    <edge source="n31" target="n32">
+    </edge>
+    <edge source="n31" target="n35">
+    </edge>
+    <edge source="n31" target="n75">
+    </edge>
+    <edge source="n31" target="n87">
+    </edge>
+    <edge source="n33" target="n58">
+    </edge>
+    <edge source="n3" target="n33">
+    </edge>
+    <edge source="n33" target="n85">
+    </edge>
+    <edge source="n32" target="n33">
+    </edge>
+    <edge source="n33" target="n100">
+    </edge>
+    <edge source="n33" target="n42">
+    </edge>
+    <edge source="n33" target="n49">
+    </edge>
+    <edge source="n33" target="n66">
+    </edge>
+    <edge source="n33" target="n67">
+    </edge>
+    <edge source="n33" target="n68">
+    </edge>
+    <edge source="n34" target="n84">
+    </edge>
+    <edge source="n34" target="n64">
+    </edge>
+    <edge source="n34" target="n109">
+    </edge>
+    <edge source="n35" target="n89">
+    </edge>
+    <edge source="n36" target="n83">
+    </edge>
+    <edge source="n36" target="n37">
+    </edge>
+    <edge source="n1" target="n37">
+    </edge>
+    <edge source="n37" target="n83">
+    </edge>
+    <edge source="n3" target="n38">
+    </edge>
+    <edge source="n39" target="n86">
+    </edge>
+    <edge source="n35" target="n40">
+    </edge>
+    <edge source="n41" target="n42">
+    </edge>
+    <edge source="n41" target="n43">
+    </edge>
+    <edge source="n41" target="n101">
+    </edge>
+    <edge source="n42" target="n85">
+    </edge>
+    <edge source="n42" target="n43">
+    </edge>
+    <edge source="n42" target="n101">
+    </edge>
+    <edge source="n42" target="n49">
+    </edge>
+    <edge source="n42" target="n68">
+    </edge>
+    <edge source="n43" target="n101">
+    </edge>
+    <edge source="n31" target="n44">
+    </edge>
+    <edge source="n45" target="n46">
+    </edge>
+    <edge source="n45" target="n47">
+    </edge>
+    <edge source="n45" target="n53">
+    </edge>
+    <edge source="n45" target="n51">
+    </edge>
+    <edge source="n45" target="n52">
+    </edge>
+    <edge source="n45" target="n105">
+    </edge>
+    <edge source="n46" target="n47">
+    </edge>
+    <edge source="n46" target="n53">
+    </edge>
+    <edge source="n47" target="n53">
+    </edge>
+    <edge source="n48" target="n103">
+    </edge>
+    <edge source="n49" target="n58">
+    </edge>
+    <edge source="n49" target="n85">
+    </edge>
+    <edge source="n49" target="n104">
+    </edge>
+    <edge source="n49" target="n59">
+    </edge>
+    <edge source="n49" target="n106">
+    </edge>
+    <edge source="n49" target="n68">
+    </edge>
+    <edge source="n51" target="n53">
+    </edge>
+    <edge source="n51" target="n52">
+    </edge>
+    <edge source="n51" target="n105">
+    </edge>
+    <edge source="n52" target="n53">
+    </edge>
+    <edge source="n52" target="n105">
+    </edge>
+    <edge source="n53" target="n105">
+    </edge>
+    <edge source="n55" target="n58">
+    </edge>
+    <edge source="n55" target="n56">
+    </edge>
+    <edge source="n55" target="n57">
+    </edge>
+    <edge source="n49" target="n55">
+    </edge>
+    <edge source="n55" target="n59">
+    </edge>
+    <edge source="n55" target="n106">
+    </edge>
+    <edge source="n56" target="n58">
+    </edge>
+    <edge source="n56" target="n57">
+    </edge>
+    <edge source="n49" target="n56">
+    </edge>
+    <edge source="n56" target="n59">
+    </edge>
+    <edge source="n56" target="n106">
+    </edge>
+    <edge source="n57" target="n58">
+    </edge>
+    <edge source="n49" target="n57">
+    </edge>
+    <edge source="n57" target="n59">
+    </edge>
+    <edge source="n57" target="n106">
+    </edge>
+    <edge source="n58" target="n59">
+    </edge>
+    <edge source="n58" target="n106">
+    </edge>
+    <edge source="n59" target="n106">
+    </edge>
+    <edge source="n35" target="n60">
+    </edge>
+    <edge source="n40" target="n60">
+    </edge>
+    <edge source="n61" target="n107">
+    </edge>
+    <edge source="n62" target="n63">
+    </edge>
+    <edge source="n62" target="n108">
+    </edge>
+    <edge source="n63" target="n108">
+    </edge>
+    <edge source="n64" target="n109">
+    </edge>
+    <edge source="n3" target="n65">
+    </edge>
+    <edge source="n65" target="n85">
+    </edge>
+    <edge source="n42" target="n65">
+    </edge>
+    <edge source="n49" target="n65">
+    </edge>
+    <edge source="n33" target="n65">
+    </edge>
+    <edge source="n65" target="n66">
+    </edge>
+    <edge source="n65" target="n67">
+    </edge>
+    <edge source="n65" target="n68">
+    </edge>
+    <edge source="n66" target="n85">
+    </edge>
+    <edge source="n42" target="n66">
+    </edge>
+    <edge source="n49" target="n66">
+    </edge>
+    <edge source="n66" target="n67">
+    </edge>
+    <edge source="n66" target="n68">
+    </edge>
+    <edge source="n67" target="n85">
+    </edge>
+    <edge source="n42" target="n67">
+    </edge>
+    <edge source="n49" target="n67">
+    </edge>
+    <edge source="n67" target="n68">
+    </edge>
+    <edge source="n68" target="n85">
+    </edge>
+    <edge source="n70" target="n88">
+    </edge>
+    <edge source="n71" target="n110">
+    </edge>
+    <edge source="n73" target="n89">
+    </edge>
+    <edge source="n74" target="n106">
+    </edge>
+    <edge source="n76" target="n77">
+    </edge>
+    <edge source="n76" target="n112">
+    </edge>
+    <edge source="n77" target="n112">
+    </edge>
+    <edge source="n35" target="n78">
+    </edge>
+    <edge source="n79" target="n80">
+    </edge>
+    <edge source="n79" target="n115">
+    </edge>
+    <edge source="n80" target="n115">
+    </edge>
+  </graph>
+</graphml>
