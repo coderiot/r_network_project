@@ -38,7 +38,7 @@
 
 %\title{Complex Network Analysis mit R}
 %\subtitle{Kategorien bei Artikeln eines wissenschaftlichen Fachsgebiets in der Wikipedia}
-\title{Kategorien bei Artikeln eines wissenschaftlichen Fachsgebiets in der Wikipedia}
+\title{Untersuchung der Kategorisierung von Artikeln von wissenschaftliche Forschungsgebieten in der Wikipedia}
 
 \numberofauthors{1} 
 \author{
@@ -51,27 +51,24 @@
 
 \maketitle
 \begin{abstract}
-	Das ist mein Abstract.
+In dieser Arbeit soll die Struktur der Kategorien und dazugehörige gemeinsame Vergabe in Artikel untersucht werden. Die Vegabe soll anhand einer wissenschaftlichen Oberkategorie durchgeführt werden. Versucht wird hierbei weitere Forschunggebiete aus dem Oberthema zu erkennen und zu extrahieren. Weiter sollen wichtige Kategorien aufgefunden werden, die die kleineren Forschungsgebiete vernetzen, sowie mit Forschungsgebieten aus anderen wissenschaftlichen Diziplinen verbinden.
 \end{abstract}
 
 \section{Einführung}
-In der Wikipedia werden den Artikel Kategorien zugeordnet. Ein Artikel kann in beliebig viele Kategorien gelistet werden. Der Aufbau der Kategorien ist hierachisch. 
+In der Wikipedia werden den Artikel Kategorien zugeordnet. Ein Artikel kann in beliebig viele Kategorien gelistet werden. Der Aufbau der Kategorien ist hierachisch. Jedoch die Kategorisierung von Artikel bilden kein hierachisches Netzwerk, da ein Artikel z.B. in zwei von einander getrennten Wissenschaftgebieten eingeordnet werden können. Mithilfe eines Netzwerker aus den Kategorien der Artikel sollen folgende Fragen untersucht werden. 
 
-- What is your research question or your goal in your class project?
 \subsection{Fragestellung}
-- How can you answer your question or realize your goal?
-Bildet die Kategorisierung der Artikel in der Wikipedia, die Forschungsgebiete der Wissenschaft ab? Dass heißt bilden sich Gruppen von Kategorien, die wissenschaftlich nahe verwandt sind?
+Bildet die Kategorisierung der Artikel in der Wikipedia, die Forschungsgebiete der Wissenschaft ab? Dass heißt bilden sich Gruppen von Kategorien, die wissenschaftlich nahe verwandt sind? Ebenso wird interessant ist die Frage, welche Kategorien wissenschaftliche Felder verknüpfen bzw. welche davon zentral für die Teilgebiete der Forschung sind.
 
 \section{Datensatz}
 Der Datensatz für die Analyse der Kategorien von wissenschaftlichen Fachgebieten wurde über die API der englischen Wikipedia gewonnen. Es wurde die Kategorie \textbf{machine Learning} als beispielhaftes Themengebiet ausgewählt, um die Analyse durchzuführen. Bei unserer Analyse wurde nur die Artikel berücksichtigt, die direkt unter der Kategorie als Seiten aufgelistet werden.
-- How can you answer your question or realize your goal?
-Bildet die Kategorisierung der Artikel in der Wikipedia, die Forschungsgebiete der Wissenschaft ab? Dass heißt bilden sich Gruppen von Kategorien, die wissenschaftlich nahe verwandt sind?
+
 \subsection{Aufbau des Netzwerks}
 Die Kategorien der Artikel bilden in unserem Netzwerk bilden die Knoten und haben außer dem Namen der Kategorie keine weiteren Eigenschaften. Die Kanten zwischen den Kategorien beschreiben die Bezeihung, dass beide Kategorien zusammen einem Artikel zugeordnet wurden. 
 \begin{figure}[H]
 \centering
 \begin{tikzpicture}[scale=2]
-	\tikzstyle{every node}=[sloped,draw,shape=rectangle];
+\tikzstyle{every node}=[sloped,draw,shape=rectangle];
 \node            (a) at (0,0)  {Kategorie A};
 \node[draw=none] (art1) at (1,-0.2) {in Artikel 1};
 \node[draw=none] (art2) at (1,0.45) {in Artikel 2};
@@ -87,24 +84,77 @@ Die Kategorien der Artikel bilden in unserem Netzwerk bilden die Knoten und habe
 \caption{Struktur des Netzwerkes}
 \end{figure}
 Die Kanten sind ungerichtet, da beide Kategorien in einem Artikel immer zusammen verwendet werden. Zwischen zweiKnoten können keine, eine oder mehr Kanten existieren. Mehr als eine Kanten zwischen zwei Knoten, existieren nur, wenn die beiden Kategorien in mehreren Artikel zusammen verwendet werden.
+
 \section{Eigenschaften des Netzwerkes}
 Das hier vorliegende Netzwerk, dass die Kategorisierung von Artikel der Kategorie maschinelles Lernen darstellt, existieren alle Kanten nur einmal. Das heißt jede der Kombinationen von Kategorien wurde nur einmal vergeben.
-Für die weitere Analyse wurde die Kategorie Machine Learning aus dem Graph entfernt, da diese in jedem Artikel auftritt. Dieser Umstand ist dem Verfahren zum Erzeugen des Netzwerkes geschuldet.
+Für die weitere Analyse wurde die Kategorie Machine Learning aus dem Graph entfernt, da diese in jedem Artikel auftritt. Dieser Umstand ist dem Verfahren zum Erzeugen des Netzwerkes geschuldet. Das Netzwerk hat $116$ Kategorien und $199$ Kanten. Es gibt also $199$ Kombinationen von Kategorien, die auf den Seiten der Oberkategorie maschinelles Lernen verwendet wurden. Hierbei sind jedoch auch Kategorien, die Wikipedia-spezifisch sind, z.B. stubs. Diese wurden bei der Analyse nicht weiter berücksichtigt.
+\newpage
+\subsection{Basismetriken}
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.35]{../visualization/degree_hist.png}
 \caption{Gradverteilung des Netzwerks}
+\label{fig:degree}
 \end{figure}
-degree\\
-Die durschnittliche Gradanzahl der Knoten beträgt $3.4$ und der maximale Grad eines Knoten ist $23$. Der Knoten mit dem maximalen Grad ist die Kategorie \textbf{Data Mining}. Außerdem haben $11$ Knoten keine Kanten, sie sind also von den anderen Kategorien isoliert.
-dichte\\
+\subsubsection{Degree}
+Die durschnittliche Gradanzahl der Knoten beträgt $3.4$ und der maximale Grad eines Knoten ist $23$. Der Knoten mit dem maximalen Grad ist die Kategorie \textbf{Data Mining}. Außerdem haben $11$ Knoten keine Kanten. Sie sind also von den anderen Kategorien isoliert. Die Verteilung der Knotengrade, als auch der Mittelwert(rot), ist in Abbildung \ref{fig:degree} zu sehen. In Tabelle \ref{tab:degree} sind die Kategorien mit den größten Degree aufgelistet
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\hline
+Kategorie & degree \\ 
+\hline
+Data mining & 23 \\ 
+Classification algorithms & 11 \\ 
+Image processing & 11 \\ 
+Information retrieval & 15 \\ 
+Numerical analysis & 9 \\ 
+\hline
+\end{tabular}
+\caption{Kategorien mit höchstem degree}
+\label{tab:degree}
+\end{table}
+\subsubsection{Dichte}
 Die Dichte des Netzwerkes beträgt $2.9\%$. Es handelt sich also um ein Netzwerk, dass angesichts der maximal möglichen Kanten, nur sehr dünn verbunden ist.
-transitivity\\
-Der globale Clusterkoeffizient des Netzwerkes hat einen Wert von $53\%$. Dasbedeutet eine Kategorie hat mit einer $50$-prozentigen Wahrscheinlichkeit eine Verbindung zu einer anderen Kategorie.
-\subsection{Centralization}
-\subsubsection{degree}
+\subsubsection{Transitivität}
+Der globale Clusterkoeffizient des Netzwerkes hat einen Wert von $0.53$. Dasbedeutet eine Kategorie hat mit einer $53$-prozentigen Wahrscheinlichkeit eine Verbindung zu einer anderen Kategorie.
 \subsubsection{betweenness}
+Die Betweenness gibt die Wichtigkeit als Zentrale Knoten eines Netzwerkes an. Wieder zeigt sich deutlich, dass die Kategorie Data Mining eine zentrale Rolle spielt unter den Kategorien im Bereich des maschinellen Lernensi(zu sehen in Tabelle \ref{tab:close}. Aber auch die Kategorien Information retrieval und Data analysis haben einen hohenbetweenness-Wert.
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\hline
+Kategorie & betweenness \\ 
+\hline
+Data mining & 1349.83 \\ 
+Information retrieval & 437.53 \\ 
+Data analysis & 330.98 \\ 
+Artificial intelligence conferences & 305.15 \\ 
+Image processing & 192.00 \\ 
+\hline
+\end{tabular}
+\caption{Kategorien mit höchster betweenness}
+\label{tab:close}
+\end{table}
+
 \subsubsection{closeness}
+Bei den closeness-Werten ist ein Interpretation schwierig, da die Variation der Werte nur sehr gering ist. Das liegt daran es in dem Netzwerk isolierte Komponenten und Knoten gibt, wodurch die Berechnung der closeness verzerrt wird. Trotzdem sind in der folgenden Tabelle \ref{tab:close} die Kategorien mit den größten closeness-Werten aufgelistet.
+\begin{table}[H]
+\centering
+\begin{tabular}{lr}
+\hline
+Kategorie & closeness \\ 
+\hline
+Data mining & 0.02 \\ 
+Data analysis & 0.02 \\ 
+Cluster analysis & 0.02 \\ 
+Artificial intelligence conferences & 0.02 \\ 
+Information retrieval & 0.02 \\ 
+\hline
+\end{tabular}
+\caption{Kategorien mit der höchsten closeness}
+\end{table}
+
 \subsection{Cluster}
 \subsection{Communities}
 \section{Analyse}
