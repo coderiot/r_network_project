@@ -1,23 +1,13 @@
 \begin{thebibliography}{1}
 
-\bibitem{braams:babel}
+\bibitem{citeulike:2348665}
+F.~Bellomi and R.~Bonato.
+\newblock {Network Analysis for Wikipedia}.
+\newblock 2005.
 
-
-\bibitem{clark:pct}
-
-
-\bibitem{herlihy:methodology}
-
-
-\bibitem{Lamport:LaTeX}
-
-
-\bibitem{salas:calculus}
-
-
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
+\bibitem{PhysRevE.70.066111}
+A.~Clauset, M.~E.~J. Newman, and C.~Moore.
+\newblock Finding community structure in very large networks.
+\newblock {\em Phys. Rev. E}, 70:066111, Dec 2004.
 
 \end{thebibliography}

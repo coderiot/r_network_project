@@ -154,20 +154,42 @@ Information retrieval & 0.02 \\
 \end{tabular}
 \caption{Kategorien mit der höchsten closeness}
 \end{table}
-
-\subsection{Cluster}
-\subsection{Communities}
-\section{Analyse}
-\begin{figure}
+\subsubsection{shortest paths}
+Die durschnittliche Länge der kürzesten Pfade in unserem Netzwerk beträgt $3.15$(In der Abbildung \ref{fig:paths} rot eingezeichnet). 
+\begin{figure}[H]
 \centering
-\includegraphics[scale=0.5]{../visualization/ml_community_graph.png}
-\caption{Netzwerk in dem Gebiet maschinelles Lernen}
+\includegraphics[scale=0.55]{../visualization/shortest_path_hist.png}
+\caption{Verteilung der Pfadlängen}
+\label{fig:paths}
+\end{figure}
+\newpage
+\section{Analyse}
+\subsection{Cluster}
+Bei der Clusteranalyse zeigt sich, dass insgesamt 24 Cluster in unserem Netzwerk existieren. Davon haben jedoch 11 nur die größe 1. Für die weitere Untersuchungen werden die Cluster der Größe nicht betrachtet, dass heißt wir haben 13 Cluster mit mindestens 2 Kategorien.
+Der größte Cluster beinhaltet 68 Kategorien, also mehr als die Hälfte aller Kategorien in unserem Netzwerk.
+In diesem Cluster befinden sich auch alle bisher in dieser Arbeit aufgetretenen Kategorien, wie Data Mining oder Information Retrieval. In Abbildung \ref{fig:clusters} sind die Cluster des Netzwerks grafisch dargestellt.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.55]{../visualization/ml_cluster_graph.png}
+\caption{Cluster im Netzwerk}
+\label{fig:clusters}
+\end{figure}
+Der auf der Abbildung grüne Cluster beinhaltet Kategorien für Publikationen aus dem Bereich des maschinellen Lernens. Dazu gehören z.B. Computer Science Journals oder Open access Journals. Auch der drittgrößte Cluster mit 5 Kategorien beinhaltet nur Kategorien die auf Bildungsinstitute verweisen und werden deshalb entfernt. Für die folgenden Analyse der Communities des Netzwerks konzentrieren wir uns auf das größte Cluster mit den 68 Kategorien.
+\subsection{Communities}
+Um die Communities in unseren Netzwerk zu entdecken haben wir bereits gesehen, dass nur die Suche nach Communities in dem größten Cluster sinnvoll ist. Dieanderen Clustern sind zu klein, damit sich dort Communities herrausbilden können und sind genausogroß wie die Cluster.
+
+In Abbildung \ref{fig:communities} ist anhand der Farben zu sehen, dass sich 6 Communties bilden. Die grüne Community bildet ein Art Zentrum für die anderen Communties, die sich um die grüne Community gruppieren.
+\begin{figure}[H]
+\centering
+\includegraphics[scale=0.6]{../visualization/ml_community_graph.png}
+\caption{Communities im größten Cluster des Netzwerks}
+\label{fig:communities}
 \end{figure}
 \section{Ergebnisse}
 \section{Related Work}
+Es gibt einige Arbeiten, die sich mit der Kategoriesierung in der Wikipedia beschäftigen
 \section{Zusammenfassung und Ausblick}
-\cite{*}
-\bibliographystyle{abbrv}
+\bibliographystyle{abbrv}\cite{*}
 \bibliography{report}
 
 \end{document}  % This is where a 'short' article might terminate
