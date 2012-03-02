@@ -32,6 +32,7 @@
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usepackage{float}
+\usepackage{rotating}
 
 
 \begin{document}
@@ -55,7 +56,7 @@ In dieser Arbeit soll die Struktur der Kategorien und dazugehörige gemeinsame V
 \end{abstract}
 
 \section{Einführung}
-In der Wikipedia werden den Artikel Kategorien zugeordnet. Ein Artikel kann in beliebig viele Kategorien gelistet werden. Der Aufbau der Kategorien ist hierachisch. Jedoch die Kategorisierung von Artikel bilden kein hierachisches Netzwerk, da ein Artikel z.B. in zwei von einander getrennten Wissenschaftgebieten eingeordnet werden können. Mithilfe eines Netzwerker aus den Kategorien der Artikel sollen folgende Fragen untersucht werden. 
+In der Wikipedia werden den Artikel Kategorien zugeordnet. Ein Artikel kann in beliebig viele Kategorien gelistet werden. Der Aufbau der Kategorien ist hierachisch. Jedoch die Kategorisierung von Artikel bilden kein hierachisches Netzwerk, da ein Artikel z.B. in zwei von einander getrennten Wissenschaftgebieten eingeordnet werden können. Die Kategorievergabe ist in der Wikipedia nicht standardisiert und auch nicht automatisiert. Kategorien werden manuell von den Nutzern vergeben und können fehlerhaft sein. Mithilfe eines Netzwerks aus den Kategorien der Artikel sollen folgende Fragen untersucht werden. 
 
 \subsection{Fragestellung}
 Bildet die Kategorisierung der Artikel in der Wikipedia, die Forschungsgebiete der Wissenschaft ab? Dass heißt bilden sich Gruppen von Kategorien, die wissenschaftlich nahe verwandt sind? Ebenso wird interessant ist die Frage, welche Kategorien wissenschaftliche Felder verknüpfen bzw. welche davon zentral für die Teilgebiete der Forschung sind.
@@ -155,7 +156,7 @@ Information retrieval & 0.02 \\
 \caption{Kategorien mit der höchsten closeness}
 \end{table}
 \subsubsection{shortest paths}
-Die durschnittliche Länge der kürzesten Pfade in unserem Netzwerk beträgt $3.15$(In der Abbildung \ref{fig:paths} rot eingezeichnet). 
+Die durschnittliche Länge der kürzesten Pfade in unserem Netzwerk beträgt $3.15$(In der Abbildung \ref{fig:paths} rot eingezeichnet). Die meisten kürzesten Pfade haben die Länge 2. Die meisten Kategorien sind also über sehr wenige andere Knoten miteinander verbunden, dass lässt darauf schließen, dass es einige sehr wichtige Knoten für das Netzwer gibt. 
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.55]{../visualization/shortest_path_hist.png}
@@ -178,6 +179,8 @@ Der auf der Abbildung grüne Cluster beinhaltet Kategorien für Publikationen au
 \subsection{Communities}
 Um die Communities in unseren Netzwerk zu entdecken haben wir bereits gesehen, dass nur die Suche nach Communities in dem größten Cluster sinnvoll ist. Dieanderen Clustern sind zu klein, damit sich dort Communities herrausbilden können und sind genausogroß wie die Cluster.
 
+Es zeigt sich, dass Kategorien, die eine hohen betweenness-Wert haben wichte Verbindungsknoten zwischen die Communities bilden. Die Kategorie Information Retrival verbindet z.B. die schwarzen und hellblaun Communities. Aber auch die Kategorie Data Mining zeigt sich als Verbindung zwischen Communities in diesem Cluster. Sie ist der Übergang zwischen grüner und hellbauer Community.
+
 In Abbildung \ref{fig:communities} ist anhand der Farben zu sehen, dass sich 6 Communties bilden. Die grüne Community bildet ein Art Zentrum für die anderen Communties, die sich um die grüne Community gruppieren.
 \begin{figure}[H]
 \centering
@@ -186,10 +189,35 @@ In Abbildung \ref{fig:communities} ist anhand der Farben zu sehen, dass sich 6 C
 \label{fig:communities}
 \end{figure}
 \section{Ergebnisse}
-\section{Related Work}
-Es gibt einige Arbeiten, die sich mit der Kategoriesierung in der Wikipedia beschäftigen
-\section{Zusammenfassung und Ausblick}
-\bibliographystyle{abbrv}\cite{*}
-\bibliography{report}
+Die Analyse zeigt, dass sich Themengruppen im Netzwerk der vergebenen Kategorien finden lassen. Sowohl bei der Clusteranalyse, als auch bei der Suche nach Communities, lassen Themenbereichen finden. Teilweise ist die Abgrenzung nicht eindeutig gegeben. Bei den kleineren Clustern geht die Einteilung noch ganz gut. Das zweitgrößte Cluster kann auf Kategorien für wissenschaftliche Publikationen beschränkt werden und das drittgrößte auf Bildungsinstitute.
+Kleinere Cluster sind wenig aussagekräftig, was unter anderem an zu wenigen Daten für das Netzwerk liegen mag. Alle Cluster, die kleiner sind als des größten sind, bilden wiederum eine Community. Auch bei sogennanten Themen kann bei den kleineren Clustern keine Aussage getroffen werden, da sie dadurch zu sehr von der großen Zahl der Kategorien abgeschnitten ist, um weitere Erkenntnisse zu gewinnen.
 
+Interessanter scheint hierbei der größte Cluster mit 68 Knoten zu seien. DieCommunity-Analyse hat gezeigt, dass sich dort 6 Communties bilden. Aber auch hier sind die Themen nicht immer ganz leicht einzugrenzen. Die kleineren Communties, die sich um die große grüne Community bilden sind nicht immer zu gebrauchen. Die beiden dunkelblauen Communities lassen sich noch beschreiben.
+Eine Community beschäftigt sich mit neuronalen Netzwerken und Algorithmen und beinhaltet ebenfalls die zugrundeliegende Neurowissenschaften als Kategorie. Die andere Community beinhaltet Kategorien, die sich mit Entscheidungsfindung und Verfahren beschäftigt. Dazu gehören die Kategorien Decision theory oder Cognitive science, die wieder naha verwand zu den Neurowissenschaften sind, jedoch ist im Netzwerk keine konkrete Beziehung zwischen beiden Communities zu erkennen.
+
+Die größte Community lässt sich jedoch nicht so leicht zusammenfassen. Sie enthält Kategorien, wie statistical models, decision trees, aber auch Natural language processing. Natürlich gehören alle diese Kategorien zur Oberkategorie machine learning. Eine weitere Differenzierung ist mit dieser Community jedoch nicht möglich. Hierfür ist wohl auch das kleine Netzwerk verantwortlich. Die Cluster - und Communtiyanalyse war also nicht sehr ergiebig.
+
+Was sich gezeigt hat ist die Verkünpfung von grundlegenden Katgorien des machinellen Lernens mit den Wissenschaften aus denen sie abgeleitet wurden. Als Beispiele sind hier zu nennen die Verbindung zwischen den Kategorien Neural networks und Neuro science oder auch Bayesian statistics mit der Kategorie decision threory. Insgesamt sind sehr viele Kategorien aus dem Bereich der Stochastik vertreten. Die dazugehörigen Bereiche können jedoch nur schwer in unserem Netzwerk unterteilt werden.
+
+Darüberhinaus lassen sich wichtige Kategorien aus dem Bereich des maschinellen Lernens sehr gut erkennen. Die wichtigen Themen scheinen Data mining, Information retrival, Cluster und Data analysis zu sein. Es zeigt sich also, das zumindest häufige Anwendungsgebiete relativ einfach anhand unseres Netzwerkes erkennen lassen. Anwendungsgebiete können dadurch identifziert werden, wenn sie mit viele verschiedene Kategorien einer Oberkategorien verbunden sind. Eine Erklärung dafür könnte sein, dass sich diese Anwendungsgebiete bei viele Erkenntnissen und Ergebnissen anderer Kategorien bedienen. 
+
+\section{Related Work}
+Es gibt einige Arbeiten, die sich mit der Kategoriesierung in der Wikipedia beschäftigen. Es konnten aber keine Publikationen gefunden werden, die sich nur mit der Struktur der gemeinsamen Vergabe von Kategorien beschäftigen. Einige Arbeiten beschäftigen sich mit der Klassifizierung von Texten anhand der Klassifizierung in der Wikipedia, wie etwa \cite{Weale_utilizingwikipedia}. Andere Arbeiten verwenden die Struktur der Kategorien in der Wikipedia als Hilfsmittel für die Verarbeitung von natürlicher Sprache \cite{tubiblio32662}.
+\section{Zusammenfassung und Ausblick}
+Im Laufe der Arbeit hat sich gezeigt, dass der Datensatz für ein wirklich aussagekräftiges Ergebnis zu klein ist. Deswegen wäre die Einbeziehungen von direkten Unterkategorien der Kategorie machine learning sinnvoll gewesen.
+
+Auch wenn bei der Erstellung des Datensatzes darauf geachtet wurde, dass keine Wikipedia-spezifischen Kategorien mit aufgenommmen werden, gab es Kategorien, die das Ergebnis leicht verändert haben. Diese Kategorien befanden waren vor allem zugenannte stub-Kategorien, also Kategorien für Artikel, die weiter ausgearbeitet werden sollen. Andererseits könnten solche Kategorien auch für eine qualitativere Analyse verwendet werden. Bei Stubs könnte nicht nur der Inhalt verbesserungsbedürftig sein, sondern auch die Kategorisierung, dass heißt solche Artikel könnten ausgeschlossen werden.
+
+Wie bereits im Abschnitt Related Work angesprochen, gibt es eine Vielzahl von Einsatzmöglichkeiten, die der Analyse der Kategorisierung in der Wikipedia zugrunde liegen.  \cite{*}
+\bibliographystyle{abbrv}
+\bibliography{report}
+\newpage
+\begin{figure}
+\centering
+\begin{sideways}
+\includegraphics[scale=0.5]{../visualization/ml_graph_big.png}
+\end{sideways}
+\caption{Communities des gesamten Netzwerks}
+\label{fig:big}
+\end{figure}
 \end{document}  % This is where a 'short' article might terminate
